@@ -1,9 +1,9 @@
 package com.weather.android.ui.weather
 
-import android.location.Location
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
+import com.weather.android.logic.model.Location
 import com.weather.android.logic.model.Repository
 
 class WeatherViewModel : ViewModel() {

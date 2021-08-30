@@ -1,5 +1,6 @@
 package com.weather.android.logic.model
 
+import android.util.Log
 import androidx.lifecycle.liveData
 import com.weather.android.logic.dao.PlaceDao
 import com.weather.android.logic.network.WeatherNetwork
@@ -32,6 +33,7 @@ object Repository {
             val realtimeResponse = deferredRealtime.await()
             val dailyResponse = deferredDaily.await()
             if (realtimeResponse.status == "ok" && dailyResponse.status == "ok") {
+                Log.d("log: ", realtimeResponse.toString())
                 val weather = Weather(
                     realtimeResponse.result.realTime,
                     dailyResponse.result.daily

@@ -2,16 +2,16 @@ package com.weather.android.logic.model
 
 import com.google.gson.annotations.SerializedName
 
-data class RealtimeResponse(val status: String, val result: Result) {
+class RealtimeResponse(val status: String, val result: Result) {
 
-    data class Result(val realTime: RealTime)
+    class Result(val realTime: RealTime)
 
-    data class RealTime(
+    class RealTime(
         val skycon: String, val temperature: Float,
         @SerializedName("air_quality") val airQuality: AirQuality
     )
 
-    data class AirQuality(val aqi: AQI)
+    class AirQuality(val aqi: AQI)
 
-    data class AQI(val chn: Float)
+    class AQI(val chn: Float)
 }

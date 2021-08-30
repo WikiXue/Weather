@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.sunnyweather.android.ui.place.PlaceFragment
 import com.weather.android.R
 import com.weather.android.logic.model.Place
 import com.weather.android.ui.weather.WeatherActivity
