@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 
-class WeatherActivity : Application() {
+class WeatherApplication : Application() {
 
     companion object {
         @SuppressLint("StaticFieldLeak")
